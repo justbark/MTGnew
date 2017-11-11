@@ -12,7 +12,7 @@ public:
 	//defualt constructor
 	Deck();
 	//constructor with specified number of card types
-	Deck(int numLands, int numCreatures, int numArtifacts, int numEnchants, int numPlanesWalker, int numInstants, int numSorcery);
+	Deck(std::string color, int numLands, int numCreatures, int numArtifacts, int numEnchants, int numPlanesWalker, int numInstants, int numSorcery);
 	//shuffle the vector
 	void shuffle();
 	//overload << operator to display the deck

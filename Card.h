@@ -16,7 +16,7 @@ public:
 	Card();
 
 	//constructor
-	Card(int d, int a, cType cT, std::string name, std::string txt);
+	Card(int d, int a, cType cT, std::string color, std::string name, std::string txt);
 
 	//overload the << operator to display the card
 	friend ostream& operator << (ostream& os, const Card& cd);
@@ -52,5 +52,6 @@ private:
 	cType cardType;	//type of card
 	std::string cName;
 	std::string cText;	//text at the bottom of each card
+	std::string cColor;
 };
 #endif // !CARD_H

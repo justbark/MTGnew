@@ -10,7 +10,7 @@ Card::Card()
 }
 
 //constructor
-Card::Card(int d, int a, cType cT, std::string name, std::string txt)
+Card::Card(int d, int a, cType cT, std::string color, std::string name, std::string txt)
 {
 	if (cT = Land)
 	{
@@ -23,6 +23,7 @@ Card::Card(int d, int a, cType cT, std::string name, std::string txt)
 		atk = a;
 		cardType = cT;
 	}
+	cColor = color;
 	cName = name;
 	cText = txt;
 }
