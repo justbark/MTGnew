@@ -9,9 +9,10 @@ class Player
 {
 public:
 	//constructor
-	Player();
+	Player(std::string pName, int hitPoints, int poisonCounters);
 
 	//functions
+	void setPlayerDeck(std::string color, int numLands, int numCreatures, int numArtifacts, int numEnchants, int numPlanesWalker, int numInstants, int numSorcery);
 	std::string getPlayerName();
 	int getPlayerLife();
 	int getPlayerPoisoncounters();
