@@ -4,6 +4,7 @@
 #include "Deck.h"
 #include <iostream>
 #include <string>
+#include <vector>
 
 class Player 
 {
@@ -16,13 +17,17 @@ public:
 	std::string getPlayerName();
 	int getPlayerLife();
 	int getPlayerPoisoncounters();
+	int roll();
+	void drawHand(int numCards);
 
 
 private:
 	std::string playerName;
 	int playerLife;
 	int playerPoisonCounters;
+	int rollRes;
 	Deck playerDeck;
+	std::vector<Card> playerHand;
 };
 
 

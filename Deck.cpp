@@ -78,6 +78,16 @@ Deck::Deck(std::string color, int numLands, int numCreatures, int numArtifacts, 
 	}
 }
 
+Card Deck::topCard()
+{
+	return theDeck[0];
+}
+
+void Deck::removeCard(Card theCard)
+{
+	if(theDeck.)
+}
+
 //shuffle the vector
 void Deck::shuffle()
 {

@@ -1,4 +1,5 @@
 #include "Player.h"
+#include <vector>
 
 Player::Player(std::string pName, int hitPoints, int poisonCounters)
 {
@@ -19,10 +20,27 @@ std::string Player::getPlayerName()
 
 int Player::getPlayerLife()
 {
-	return playerLife
+	return playerLife;
 }
 
 int Player::getPlayerPoisoncounters()
 {
 	return playerPoisonCounters;
+}
+
+int Player::roll()
+{
+	rollRes = (rand() % 20) + 1;
+	return rollRes;
+}
+
+void Player::drawHand(int numCards)
+{
+	while (playerHand.size() < numCards)
+	{
+		Card tempCard;
+		tempCard = playerDeck.topCard();
+		playerHand.push_back(tempCard);
+		
+	}
 }
